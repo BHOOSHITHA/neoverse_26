@@ -14,7 +14,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/80">
-              A National Level Hackathon organized by Student Developers Cell, CIT
+              A Hackathon organized by Department of AIML and SDC, CIT
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 text-center">
           <p className="text-white/60 text-sm">
-            © 2025 NeoVerse 26 All rights reserved. | Developed with 💙 by M.Sc AIML X SDC, CIT
+            © 2025 NeoVerse 26 All rights reserved. | Developed with 💙 by Dept. of AIML X SDC, CIT
           </p>
         </div>
       </div>

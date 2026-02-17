@@ -3,14 +3,14 @@ import { Phone, Mail, User } from 'lucide-react';
 export default function ContactsSection() {
   const contacts = [
     {
-      name: 'Nikhil',
-      role: 'Secretary',
-      phone: '+91 91489 35974'
+      name: 'Vinoth Kumar A',
+      role: 'AIML Intern, Survey Sparrow',
+      phone: '+91 63800 91722'
     },
     {
-      name: 'Kavi Selvan',
-      role: 'Joint Secretary',
-      phone: '+91 81227 97144'
+      name: 'Bhooshitha V',
+      role: '',
+      phone: '+91 7598742261'
     }
   ];
 
