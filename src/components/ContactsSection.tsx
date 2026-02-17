@@ -1,0 +1,58 @@
+import { Phone, Mail, User } from 'lucide-react';
+
+export default function ContactsSection() {
+  const contacts = [
+    {
+      name: 'Nikhil',
+      role: 'Secretary',
+      phone: '+91 91489 35974'
+    },
+    {
+      name: 'Kavi Selvan',
+      role: 'Joint Secretary',
+      phone: '+91 81227 97144'
+    }
+  ];
+
+  return (
+    <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-transparent">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Contact Us
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-6 opacity-80"></div>
+          <p className="text-lg text-primary-100">
+            Have questions? Reach out to our team
+          </p>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-6">
+          {contacts.map((contact, index) => (
+            <div
+              key={index}
+              className="group bg-white/5 backdrop-blur-sm border border-primary-500/20 rounded-lg p-6 hover:border-primary-400/40 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-primary-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                <User className="w-7 h-7 text-white" />
+              </div>
+
+              <h3 className="text-xl font-bold text-white mb-1 text-center">{contact.name}</h3>
+              <p className="text-sm text-primary-300 mb-4 text-center">{contact.role}</p>
+
+              <div className="space-y-2">
+                <a
+                  href={`tel:${contact.phone}`}
+                  className="flex items-center gap-2 text-sm text-primary-100 hover:text-white transition-colors justify-center"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>{contact.phone}</span>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
