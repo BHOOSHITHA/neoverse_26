@@ -37,7 +37,7 @@ export default function HeroSection() {
               Where Innovation Meets Execution
             </h2>
             <p className="text-lg md:text-xl text-teal-200/80 font-medium tracking-wide">
-              A National-Level Hackathon
+              A National Level Hackathon organized by M.Sc AIML X SDC, CIT
             </p>
           </div>
 
