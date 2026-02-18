@@ -16,11 +16,20 @@ export default function JourneySection() {
     },
     {
       number: 3,
-      title: 'Team Shortlisting',
+      title: 'Team Shortlisting Results',
       description: 'Selected teams will be notified via email. Check your inbox!',
-      date: 'Febraury 25 2026',
+      date: 'Febraury 27 2026',
       icon: '○'
     },
+
+     {
+      number: 3,
+      title: 'Confirmation from teams',
+      description: 'Selected teams must submit the provided signed consent forms along with permission from their respective colleges to confirm participation',
+      date: 'March 2  2026',
+      icon: '○'
+    },
+
     {
       number: 4,
       title: 'Hackathon Day',

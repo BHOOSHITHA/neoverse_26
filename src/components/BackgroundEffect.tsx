@@ -178,7 +178,7 @@ export default function BackgroundEffect() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, transparent 0%, transparent 40%, rgba(0,0,0,0.7) 100%)",
+            "radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.8) 100%)",
         }}
       />
     </div>
