@@ -1,3 +1,7 @@
+import firstPlaceImg from '../assets/first_place.png';
+import secondPlaceImg from '../assets/second_place.png';
+import thirdPlaceImg from '../assets/third_place.png';
+
 export default function PrizePoolSection() {
   return (
     <section id="prizes" className="min-h-screen flex items-center justify-center py-20 px-6 bg-transparent">
@@ -19,9 +23,14 @@ export default function PrizePoolSection() {
           {/* 1st Place - Winner (LEFT) */}
           <div className="w-full">
             <div className="bg-white/5 backdrop-blur-sm border border-primary-500/20 rounded-2xl p-8 text-center hover:border-primary-400/40 transition-all duration-300 shadow-lg">
-              {/* Emoji Icon */}
-              <div className="text-7xl mb-6">
-                🏆
+              {/* Prize Icon */}
+              {/* Prize Icon */}
+              <div className="mb-6 flex justify-center h-32 items-center">
+                <img
+                  src={firstPlaceImg}
+                  alt="1st Place Winner"
+                  className="h-24 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.5)] transform hover:scale-110 transition-transform duration-300"
+                />
               </div>
 
               {/* Title */}
@@ -39,9 +48,14 @@ export default function PrizePoolSection() {
           {/* 2nd Place - Runner Up (CENTER) */}
           <div className="w-full">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-white/20 transition-all duration-300">
-              {/* Emoji Icon */}
-              <div className="text-7xl mb-6">
-                🥈
+              {/* Prize Icon */}
+              {/* Prize Icon */}
+              <div className="mb-6 flex justify-center h-32 items-center">
+                <img
+                  src={secondPlaceImg}
+                  alt="2nd Place Runner Up"
+                  className="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(192,192,192,0.5)] transform hover:scale-110 transition-transform duration-300"
+                />
               </div>
 
               {/* Title */}
@@ -59,9 +73,14 @@ export default function PrizePoolSection() {
           {/* 3rd Place - 2nd Runner Up (RIGHT) */}
           <div className="w-full">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-white/20 transition-all duration-300">
-              {/* Emoji Icon */}
-              <div className="text-7xl mb-6">
-                🥉
+              {/* Prize Icon */}
+              {/* Prize Icon */}
+              <div className="mb-6 flex justify-center h-32 items-center">
+                <img
+                  src={thirdPlaceImg}
+                  alt="3rd Place 2nd Runner Up"
+                  className="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(205,127,50,0.5)] transform hover:scale-110 transition-transform duration-300"
+                />
               </div>
 
               {/* Title */}
