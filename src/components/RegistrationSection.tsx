@@ -20,7 +20,7 @@ export default function RegistrationSection() {
     {
       icon: Wallet,
       title: 'Registration Fee',
-      description: '₹320/person'
+      description: '₹320/person (Food and Refreshments will be provided)'
     },
     {
       icon: CheckCircle,
