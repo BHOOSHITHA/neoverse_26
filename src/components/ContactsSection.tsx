@@ -8,9 +8,9 @@ export default function ContactsSection() {
       phone: '+91 63800 91722'
     },
     {
-      name: 'Bhooshitha V',
-      role: '',
-      phone: '+91 7598742261'
+      name: 'Sravesh PV',
+      role: 'Student Organiser',
+      phone: '+91 8807807807'
     }
   ];
 
