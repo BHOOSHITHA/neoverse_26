@@ -42,7 +42,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 text-center">
           <p className="text-white/60 text-sm">
-            © 2026 NeoVerse 26 All rights reserved. | Developed with 💙 by Dept. of Computing - AI & ML X SDC, CIT
+            © 2026 NeoVerse 26 All rights reserved. | Developed by Dept. of Computing - AI & ML X SDC, CIT
           </p>
         </div>
       </div>
