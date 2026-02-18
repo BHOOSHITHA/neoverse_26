@@ -6,7 +6,7 @@ export default function JourneySection() {
       number: 1,
       title: 'Registration Begins',
       description: 'Let\'s get innovating for a change',
-      date: 'February 19, 2026',
+      date: 'February 18, 2026',
     },
     {
       number: 2,
