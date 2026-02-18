@@ -51,8 +51,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || isOpen
-      ? 'bg-black/80 backdrop-blur-md border-b border-teal-500/50 shadow-[0_0_30px_rgba(20,184,166,0.3)]'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all ${isOpen ? 'duration-0' : 'duration-300'} ${scrolled || isOpen
+      ? 'bg-black backdrop-blur-md border-b border-teal-500/50 shadow-[0_0_30px_rgba(20,184,166,0.3)]'
       : 'bg-black/50 backdrop-blur-md border-b border-teal-500/40'
       }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
