@@ -4,7 +4,7 @@ export default function ContactsSection() {
   const contacts = [
     {
       name: 'Vinoth Kumar A',
-      role: 'AIML Intern, Survey Sparrow',
+      role: 'AIML Intern, SurveySparrow',
       phone: '+91 63800 91722'
     },
     {
