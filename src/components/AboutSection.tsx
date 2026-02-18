@@ -16,7 +16,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-primary-100">
-              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a milestone our <span className="font-bold text-yellow-300">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
+              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a milestone our <span className="font-bold text-300">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
             </p>
 
             <p className="text-primary-100">

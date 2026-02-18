@@ -15,8 +15,8 @@ function FloatingPaths({ position }: { position: number }) {
         width: 0.8 + i * 0.04,
         opacity: 0.15 + i * 0.025,
         duration: 15 + (i % 10) * 1.5,
-        // Alternate between primary and blue with variations
-        color: i % 3 === 0 ? "rgb(46, 102, 109)" : i % 3 === 1 ? "rgb(59, 130, 246)" : "rgb(59, 130, 246)",
+        // Alternate between Pinkish Purple (#D946EF) and Teal (#2DD4BF)
+        color: i % 2 === 0 ? "#D946EF" : "#2DD4BF",
       })),
     [position],
   );
