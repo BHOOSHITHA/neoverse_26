@@ -12,7 +12,7 @@ export default function AboutSection() {
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
             <p className="text-primary-100">
-              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a national-level AI hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association Committee</span> and the <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
+              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a national-level AI hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association</span> and the <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
             </p>
 
             <p className="text-primary-100">

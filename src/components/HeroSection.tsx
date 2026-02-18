@@ -43,7 +43,7 @@ export default function HeroSection() {
               Where Innovation Meets Execution
             </h2>
             <div className="flex flex-col items-center gap-1 text-lg md:text-xl text-teal-200/80 font-medium tracking-wide mt-4">
-              <span>A Hackathon organized by</span>
+              <span>A National-level AI Hackathon organized by</span>
               <span className="font-bold text-white text-center">Department of Computing - Artificial Intelligence and Machine Learning</span>
               <span>in collaboration with</span>
               <span className="font-bold text-white">Student Developers Cell, CIT</span>

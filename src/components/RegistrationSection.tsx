@@ -5,7 +5,7 @@ export default function RegistrationSection() {
     {
       icon: Users,
       title: 'Eligibility',
-      description: 'Open to all college students across India'
+      description: 'Open to all College Students across India'
     },
     {
       icon: Users,
@@ -15,7 +15,7 @@ export default function RegistrationSection() {
     {
       icon: Clock,
       title: 'Duration',
-      description: '24-hour non-stop hackathon'
+      description: '24-hour Non-Stop Hackathon'
     },
     {
       icon: Wallet,
@@ -25,12 +25,12 @@ export default function RegistrationSection() {
     {
       icon: CheckCircle,
       title: 'Selection Process',
-      description: 'Idea submission round followed by final round with shortlisted teams'
+      description: 'Idea submission round followed by Final Round with shortlisted teams'
     },
     {
       icon: FileText,
       title: 'What You Get',
-      description: '₹30K prize pool, certificates, internship opportunities & networking'
+      description: '₹30K Prize Pool, Certificates, Internship Opportunities & Networking'
     }
   ];
 

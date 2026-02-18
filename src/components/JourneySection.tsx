@@ -30,7 +30,7 @@ export default function JourneySection() {
       number: 5,
       title: 'Hackathon Day',
       description: 'Inaugral Ceremony, team check-in, and hacking begins!',
-      date: 'March 07 2026',
+      date: 'March 07 - 08, 2026',
     }
   ];
 
