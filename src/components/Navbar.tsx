@@ -16,6 +16,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     setIsOpen(false); // Close menu on click
@@ -43,7 +52,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || isOpen
-      ? 'bg-black border-b border-teal-500/50 shadow-[0_0_30px_rgba(20,184,166,0.3)]'
+      ? 'bg-black/80 backdrop-blur-md border-b border-teal-500/50 shadow-[0_0_30px_rgba(20,184,166,0.3)]'
       : 'bg-black/50 backdrop-blur-md border-b border-teal-500/40'
       }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -84,7 +93,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'
+            <div className={`fixed inset-0 h-screen bg-black/90 backdrop-blur-md z-40 transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'
               }`}>
               <div className="flex flex-col items-center justify-center h-full gap-8">
                 {navLinks.map((link) => (
