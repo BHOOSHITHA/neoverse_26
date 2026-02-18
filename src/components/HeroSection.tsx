@@ -1,4 +1,5 @@
 import { Calendar, MapPin } from 'lucide-react';
+import surveySparrowLogo from '../assets/gallery/SurveySparrow_Symbol_1.png';
 
 export default function HeroSection() {
   return (
@@ -11,9 +12,14 @@ export default function HeroSection() {
 
       <div className="max-w-6xl mx-auto px-6 py-20 text-center relative z-10">
         {/* SurveySparrow Presents */}
-        <div className="mb-6">
-          <p className="text-lg md:text-xl text-teal-200/80 font-medium">
-            <span className="font-bold text-2xl md:text-3xl text-cyan-300">
+        <div className="mb-6 flex items-center justify-center gap-3">
+          <img
+            src={surveySparrowLogo}
+            alt="SurveySparrow Logo"
+            className="w-8 h-8 md:w-10 md:h-10 object-contain"
+          />
+          <p className="text-lg md:text-xl text-white font-medium">
+            <span className="font-bold text-2xl md:text-3xl text-[#2E9CA6]">
               SurveySparrow
             </span>
             {' '}presents
@@ -37,7 +43,7 @@ export default function HeroSection() {
               Where Innovation Meets Execution
             </h2>
             <p className="text-lg md:text-xl text-teal-200/80 font-medium tracking-wide">
-              A Hackathon organized by Department of AIML and SDC, CIT
+              A Hackathon organized by Department of Computing - AI & ML and SDC, CIT
             </p>
           </div>
 
@@ -70,7 +76,7 @@ export default function HeroSection() {
 
         {/* Organizer */}
         <p className="mt-8 text-teal-200">
-          Organized by <span className="font-bold text-white">Department of AIML X SDC, CIT</span>
+          Organized by <span className="font-bold text-white">Department of Computing - AI & ML X SDC, CIT</span>
         </p>
       </div>
     </section>

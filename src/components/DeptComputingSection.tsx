@@ -12,7 +12,7 @@ export default function DeptComputingSection() {
           <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-8 opacity-80"></div>
         </div>
 
-        <div className="max-w-5xl mx-auto space-y-6 text-lg leading-relaxed text-center">
+        <div className="max-w-5xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
           <p className="text-primary-100">
             The <span className="font-bold text-white">Department of Computing</span> at Coimbatore Institute of Technology, established in 1988 at the dawn of the IT revolution, has been a pioneer in promoting excellence in computer science education.
           </p>

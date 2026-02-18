@@ -38,7 +38,7 @@ export default function EventGallery() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-5xl md:text-6xl font-black text-white mb-6 drop-shadow-[0_0_30px_rgba(46,102,109,0.5)]">
-            Event Gallery
+            Event Gallery - SDC
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 shadow-[0_0_20px_rgba(46,102,109,0.6)]"></div>
           <p className="text-lg text-primary-100">

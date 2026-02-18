@@ -11,7 +11,7 @@ export default function SDCSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-8 shadow-[0_0_20px_rgba(46,102,109,0.6)]"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12 text-center">
+        <div className="max-w-4xl mx-auto mb-12 text-justify">
           <p className="text-lg text-primary-100 leading-relaxed mb-4">
             The <span className="font-bold text-white">Student Developers Cell (SDC)</span> is a student-run technical club at <span className="font-bold text-blue-300">Coimbatore Institute of Technology</span>, dedicated to fostering a vibrant community of developers, innovators, and tech enthusiasts.
           </p>

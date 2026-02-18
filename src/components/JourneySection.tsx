@@ -4,28 +4,28 @@ export default function JourneySection() {
       number: 1,
       title: 'Registration Begins',
       description: 'Let\'s get innovating for a change',
-      date: 'February 16 2025',
+      date: 'February 18 2026',
       icon: '✓'
     },
     {
       number: 2,
       title: 'Registration Ends',
       description: 'Final chance to register for the hackathon. Don\'t miss out!',
-      date: 'February 24 2025',
+      date: 'February 24 2026',
       icon: '📝'
     },
     {
       number: 3,
       title: 'Team Shortlisting',
       description: 'Selected teams will be notified via email. Check your inbox!',
-      date: 'March 01 2025',
+      date: 'Febraury 25 2026',
       icon: '○'
     },
     {
       number: 4,
       title: 'Hackathon Day',
       description: 'Opening ceremony, team check-in, and hacking begins!',
-      date: 'March 07 2025',
+      date: 'March 07 2026',
       icon: '○'
     }
   ];

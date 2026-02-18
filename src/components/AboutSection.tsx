@@ -10,13 +10,13 @@ export default function AboutSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-8 opacity-80"></div>
 
-          <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
             <p className="text-primary-100">
               <span className="font-bold text-white text-xl">NeoVerse 26</span> is a hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association Commitee</span> and <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
             </p>
 
             <p className="text-primary-100">
-              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a milestone — our <span className="font-bold text-yellow-300">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
+              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a milestone our <span className="font-bold text-yellow-300">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
             </p>
 
             <p className="text-primary-100">
@@ -41,7 +41,7 @@ export default function AboutSection() {
                 <h3 className="text-xl font-bold text-white">Internship Opportunities</h3>
               </div>
               <p className="text-primary-100 leading-relaxed">
-                Top performers will get exclusive interview opportunities from our partners. Turn your hackathon success into career advancement! *Opportunities will be based on performance.
+                Top performers will get exclusive interview opportunities from our partners. Turn your hackathon success into career advancement! <span className="font-bold">*Opportunities will be based on performance and company decisions.</span>
               </p>
             </div>
 

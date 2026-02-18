@@ -22,10 +22,10 @@ export default function LandingPage() {
         <HeroSection />
         <AboutSection />
         <PrizePoolSection />
-        <EventGallery />
+        <TracksSection />
         <DeptComputingSection />
         <SDCSection />
-        <TracksSection />
+        <EventGallery />
         <SponsorShowcase />
         <JourneySection />
         <RegistrationSection />
