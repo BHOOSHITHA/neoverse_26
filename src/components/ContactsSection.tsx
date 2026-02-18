@@ -4,13 +4,13 @@ export default function ContactsSection() {
   const contacts = [
     {
       name: 'Vinoth Kumar A',
-      role: 'AIML Intern, SurveySparrow',
+      role: 'Student Organiser',
       phone: '+91 63800 91722'
     },
     {
       name: 'Sarvesh PV',
       role: 'Student Organiser',
-      phone: '+91 8807807807'
+      phone: '+91 88078 07807'
     }
   ];
 

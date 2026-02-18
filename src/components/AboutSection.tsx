@@ -12,22 +12,16 @@ export default function AboutSection() {
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
             <p className="text-primary-100">
-              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association Commitee</span> and <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
+              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a national-level AI hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association Committee</span> and the <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
             </p>
 
             <p className="text-primary-100">
-              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a milestone our <span className="font-bold text-300">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
+              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a major milestone with our <span className="font-bold text-white">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
             </p>
 
             <p className="text-primary-100">
-              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who want to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems — this is your platform.
+              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who aspire to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems this is your platform.
             </p>
-
-            <div className="pt-4">
-              <p className="text-primary-200 font-semibold text-xl">
-                Join us for 24 hours of hacking, learning, and building the future.
-              </p>
-            </div>
           </div>
 
           {/* Highlight Cards */}

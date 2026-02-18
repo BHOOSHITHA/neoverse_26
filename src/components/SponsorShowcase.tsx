@@ -119,7 +119,7 @@ export default function SponsorShowcase() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <TierSection
-            title="Internship Offer Sponsor"
+            title="Platinum Sponsor"
             sponsors={sponsorTiers.internship}
             tierColor="#4FC3F7"
             columns={1}
@@ -127,7 +127,7 @@ export default function SponsorShowcase() {
           />
 
           <TierSection
-            title="Bronze Sponsor"
+            title="Gold Sponsor"
             sponsors={sponsorTiers.bronze}
             tierColor="#CD7F32"
             columns={1}
@@ -136,7 +136,7 @@ export default function SponsorShowcase() {
         </div>
 
         <TierSection
-          title="Well Wishers"
+          title="Bronze Sponsor"
           sponsors={sponsorTiers.wellWisher}
           tierColor="#8b5cf6"
           columns={2}

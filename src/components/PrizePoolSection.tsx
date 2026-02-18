@@ -9,7 +9,7 @@ export default function PrizePoolSection() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-6 opacity-80"></div>
           <p className="text-2xl md:text-3xl font-bold text-cyan-300 tracking-wider mb-16 drop-shadow-[0_0_10px_rgba(45,212,191,0.5)]">
-            Total Prize Pool Worth ₹30,000
+            Compete for an Exciting Total Prize Pool Worth ₹30,000
           </p>
         </div>
 

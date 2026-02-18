@@ -20,17 +20,17 @@ export default function RegistrationSection() {
     {
       icon: Wallet,
       title: 'Registration Fee',
-      description: '₹300/person'
+      description: '₹320/person'
     },
     {
       icon: CheckCircle,
       title: 'Selection Process',
-      description: 'Idea submission round followed by team shortlisting'
+      description: 'Idea submission round followed by final round with shortlisted teams'
     },
     {
       icon: FileText,
       title: 'What You Get',
-      description: '₹30K prizes, certificates & networking'
+      description: '₹30K prize pool, certificates, internship opportunities & networking'
     }
   ];
 

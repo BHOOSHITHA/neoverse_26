@@ -42,9 +42,12 @@ export default function HeroSection() {
             <h2 className="text-xl md:text-2xl font-bold text-white/90 mb-3 tracking-wide uppercase">
               Where Innovation Meets Execution
             </h2>
-            <p className="text-lg md:text-xl text-teal-200/80 font-medium tracking-wide">
-              A Hackathon organized by Department of Computing - AI & ML and SDC, CIT
-            </p>
+            <div className="flex flex-col items-center gap-1 text-lg md:text-xl text-teal-200/80 font-medium tracking-wide mt-4">
+              <span>A Hackathon organized by</span>
+              <span className="font-bold text-white text-center">Department of Computing - Artificial Intelligence and Machine Learning</span>
+              <span>in collaboration with</span>
+              <span className="font-bold text-white">Student Developers Cell, CIT</span>
+            </div>
           </div>
 
           {/* Event Details */}
@@ -74,10 +77,6 @@ export default function HeroSection() {
           </button>
         </a>
 
-        {/* Organizer */}
-        <p className="mt-8 text-teal-200">
-          Organized by <span className="font-bold text-white">Department of Computing - AI & ML X SDC, CIT</span>
-        </p>
       </div>
     </section>
   );
