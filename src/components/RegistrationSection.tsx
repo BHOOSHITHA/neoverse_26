@@ -25,7 +25,7 @@ export default function RegistrationSection() {
     {
       icon: CheckCircle,
       title: 'Selection Process',
-      description: 'Idea submission round followed by Final Round with shortlisted teams'
+      description: 'Idea Submission Round followed by Final Round with shortlisted teams'
     },
     {
       icon: FileText,

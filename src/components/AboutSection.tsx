@@ -16,11 +16,11 @@ export default function AboutSection() {
             </p>
 
             <p className="text-primary-100">
-              After a hugely successful first edition, NeoVerse returns bigger and bolder. This year marks a major milestone with our <span className="font-bold text-white">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
+              This year marks a major milestone with our <span className="font-bold text-white">first-ever 24-hour hackathon</span>, bringing together talented students from across the nation for an intense innovation marathon.
             </p>
 
             <p className="text-primary-100">
-              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who aspire to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems this is your platform.
+              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who aspire to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems — this is your platform.
             </p>
           </div>
 
