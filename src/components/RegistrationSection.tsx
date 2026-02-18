@@ -72,7 +72,7 @@ export default function RegistrationSection() {
 
         <div className="text-center mb-8">
           <a
-            href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1634365"
+            href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646"
             target="_blank"
             rel="noopener noreferrer"
           >
