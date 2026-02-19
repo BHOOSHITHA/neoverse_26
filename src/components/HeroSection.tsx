@@ -2,6 +2,7 @@ import { Calendar, MapPin } from 'lucide-react';
 import surveySparrowLogo from '../assets/gallery/SurveySparrow_Symbol_1.png';
 import mealSnackImage from '../assets/meal and snack.png';
 import twentyFourHoursImage from '../assets/24 Hours Preview from WhatsApp.png';
+import internshipImage from '../assets/internshiop-opp.png';
 
 export default function HeroSection() {
   return (
@@ -12,21 +13,12 @@ export default function HeroSection() {
         <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl bottom-20 right-10 animate-pulse delay-700"></div>
       </div>
 
-      {/* 24 Hours Hackathon Badge - Top Right Corner (Hidden on Mobile) */}
-      <div className="hidden md:block absolute top-[100px] right-12 z-20">
+      {/* Internship Opportunities Badge - Top Left Corner (Hidden on Mobile) */}
+      <div className="hidden md:block absolute top-[140px] left-12 z-20 animate-bounce">
         <img
-          src={twentyFourHoursImage}
-          alt="24 Hours Hackathon"
-          className="w-40 h-40 lg:w-48 lg:h-48 object-contain drop-shadow-[0_0_20px_rgba(20,184,166,0.4)]"
-        />
-      </div>
-
-      {/* Meal and Snack Circle Image - Left Bottom Corner (Hidden on Mobile) */}
-      <div className="hidden md:block absolute bottom-6 left-12 z-20">
-        <img
-          src={mealSnackImage}
-          alt="Meals and Snacks"
-          className="w-40 h-40 lg:w-48 lg:h-48 object-cover rounded-full shadow-[0_0_30px_rgba(20,184,166,0.5)] border-2 border-teal-400/30"
+          src={internshipImage}
+          alt="Internship Opportunities"
+          className="w-56 h-56 lg:w-64 lg:h-64 object-contain drop-shadow-[0_0_20px_rgba(147,51,234,0.4)]"
         />
       </div>
 
@@ -84,18 +76,39 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <a
-          href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-500 hover:to-blue-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-teal-400/30 cursor-pointer"
+        {/* CTA Button with Stickers */}
+        <div className="relative flex items-center justify-center">
+          {/* 24 Hours Badge - Left of Button (Hidden on Mobile) */}
+          <div className="hidden md:block absolute -left-32 lg:-left-40 rotate-[-15deg]">
+            <img
+              src={twentyFourHoursImage}
+              alt="24 Hours Hackathon"
+              className="w-28 h-28 lg:w-32 lg:h-32 object-contain drop-shadow-[0_0_20px_rgba(20,184,166,0.4)]"
+            />
+          </div>
+
+          {/* Register Button */}
+          <a
+            href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Register Now
-          </button>
-        </a>
+            <button
+              className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-500 hover:to-blue-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-teal-400/30 cursor-pointer"
+            >
+              Register Now
+            </button>
+          </a>
+
+          {/* Meal and Snacks Badge - Right of Button (Hidden on Mobile) */}
+          <div className="hidden md:block absolute -right-32 lg:-right-40 rotate-[15deg]">
+            <img
+              src={mealSnackImage}
+              alt="Meals and Snacks"
+              className="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-full shadow-[0_0_30px_rgba(20,184,166,0.5)] border-2 border-teal-400/30"
+            />
+          </div>
+        </div>
 
       </div>
     </section>
