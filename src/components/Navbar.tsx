@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import favicon from '../assets/favicon.png';
+import citLogo from '../assets/images.jpeg';
 
 export default function Navbar() {
   const location = useLocation();
@@ -56,13 +58,29 @@ export default function Navbar() {
       : 'bg-black/50 backdrop-blur-md border-b border-teal-500/40'
       }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group z-50">
-          <span className="text-2xl font-black text-white drop-shadow-[0_0_10px_rgba(20,184,166,0.5)] group-hover:text-teal-300 transition-colors">
-            NeoVerse
-          </span>
-          <span className="px-2 py-1 bg-gradient-to-r from-teal-500 to-blue-500 text-white text-sm font-bold rounded-full shadow-[0_0_15px_rgba(20,184,166,0.6)]">
-            26
-          </span>
+        <Link to="/" className="flex items-center gap-3 group z-50">
+
+          {/* Favicon */}
+          <img
+            src={favicon}
+            alt="NeoVerse"
+            className="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-[0_0_10px_rgba(20,184,166,0.5)]"
+          />
+
+          {/* Vertical Separator */}
+          <div className="w-px h-8 bg-white/30 hidden md:block"></div>
+
+          {/* CIT Branding */}
+          <div className="flex items-center gap-2">
+            <img
+              src={citLogo}
+              alt="CIT"
+              className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-full bg-white/10"
+            />
+            <div className="flex flex-col justify-center">
+              <span className="text-white font-bold text-xs md:text-sm leading-tight text-left">Coimbatore Institute of Technology</span>
+            </div>
+          </div>
         </Link>
 
         {isHomePage && (
