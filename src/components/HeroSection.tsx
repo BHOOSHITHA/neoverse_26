@@ -1,5 +1,7 @@
 import { Calendar, MapPin } from 'lucide-react';
 import surveySparrowLogo from '../assets/gallery/SurveySparrow_Symbol_1.png';
+import mealSnackImage from '../assets/meal and snack.png';
+import twentyFourHoursImage from '../assets/24 Hours Preview from WhatsApp.png';
 
 export default function HeroSection() {
   return (
@@ -8,6 +10,24 @@ export default function HeroSection() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-teal-500/10 rounded-full blur-3xl top-20 left-10 animate-pulse"></div>
         <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl bottom-20 right-10 animate-pulse delay-700"></div>
+      </div>
+
+      {/* 24 Hours Hackathon Badge - Top Right Corner (Hidden on Mobile) */}
+      <div className="hidden md:block absolute top-[100px] right-12 z-20">
+        <img
+          src={twentyFourHoursImage}
+          alt="24 Hours Hackathon"
+          className="w-40 h-40 lg:w-48 lg:h-48 object-contain drop-shadow-[0_0_20px_rgba(20,184,166,0.4)]"
+        />
+      </div>
+
+      {/* Meal and Snack Circle Image - Left Bottom Corner (Hidden on Mobile) */}
+      <div className="hidden md:block absolute bottom-6 left-12 z-20">
+        <img
+          src={mealSnackImage}
+          alt="Meals and Snacks"
+          className="w-40 h-40 lg:w-48 lg:h-48 object-cover rounded-full shadow-[0_0_30px_rgba(20,184,166,0.5)] border-2 border-teal-400/30"
+        />
       </div>
 
       <div className="max-w-6xl mx-auto px-6 py-20 text-center relative z-10">
