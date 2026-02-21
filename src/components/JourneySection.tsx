@@ -19,7 +19,7 @@ export default function JourneySection() {
       number: 3,
       title: 'Registration Ends',
       description: 'Final chance to register for the hackathon. Don\'t miss out!',
-      date: 'March 2, 2026',
+      date: 'March 02, 2026',
     },
     {
       number: 4,
