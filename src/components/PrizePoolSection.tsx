@@ -139,7 +139,7 @@ export default function PrizePoolSection() {
             <div className="flex items-start gap-3">
               <span className="text-white text-lg mt-0.5">•</span>
               <p className="text-gray-200 text-base font-medium leading-snug">
-                Internship Opportunities for Top Performing Teams
+                Internship Opportunities for Top Performing Teams based on Company's Discretion
               </p>
             </div>
             <div className="flex items-start gap-3">
