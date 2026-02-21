@@ -141,7 +141,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
   const frameCountRef = useRef(0)
   const wordIndexRef = useRef(0)
   const [isSkipping, setIsSkipping] = useState(false)
-  const [isMuted, setIsMuted] = useState(false)
+  const [isMuted, setIsMuted] = useState(true)
 
   const words = ["NEOVERSE '26", "NATIONAL-LEVEL", "AI HACKATHON"]
   const pixelSteps = 6
@@ -282,13 +282,24 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
     }
 
     frameCountRef.current++
-    if (frameCountRef.current % 180 === 0) {
+    // Increase delay for first word (240 frames = 4 seconds), then 180 frames (3 seconds) for others
+    const frameDelay = wordIndexRef.current === 0 ? 240 : 180;
+    
+    if (frameCountRef.current % frameDelay === 0 && frameCountRef.current > 0) {
       wordIndexRef.current++
       if (wordIndexRef.current >= words.length) {
-        // Intro complete
+        // Intro complete - smooth transition
+        setIsSkipping(true)
+        if (audioRef.current) {
+          audioRef.current.pause()
+          audioRef.current.currentTime = 0
+        }
         setTimeout(() => {
-          handleSkip()
-        }, 2000)
+          if (animationRef.current) {
+            cancelAnimationFrame(animationRef.current)
+          }
+          onComplete()
+        }, 800)
         return
       }
       nextWord(words[wordIndexRef.current], canvas)
@@ -313,8 +324,15 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
 
   const toggleMute = () => {
     if (audioRef.current) {
-      audioRef.current.muted = !audioRef.current.muted
-      setIsMuted(!isMuted)
+      const newMutedState = !isMuted;
+      audioRef.current.muted = newMutedState;
+      setIsMuted(newMutedState);
+      
+      // If unmuting and audio isn't playing, start it
+      if (!newMutedState && audioRef.current.paused) {
+        audioRef.current.currentTime = 0;
+        audioRef.current.play().catch(err => console.log("Audio play error:", err));
+      }
     }
   }
 
@@ -326,38 +344,13 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    // Play audio - reset and play from beginning
+    // Setup audio - muted by default, ready to play
     if (audio) {
-      audio.currentTime = 0; // Reset to beginning
-      audio.volume = 0.5; // Set volume to 50%
-      audio.muted = false; // Ensure not muted
-      audio.loop = false; // Don't loop
-      
-      // Force load the audio
+      audio.currentTime = 0;
+      audio.volume = 0.7; // Increased volume to 70%
+      audio.muted = true; // Muted by default
+      audio.loop = false;
       audio.load();
-      
-      const playPromise = audio.play();
-      
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            console.log("Audio playing successfully");
-          })
-          .catch(err => {
-            console.log("Audio autoplay prevented:", err);
-            // Try to play on first user interaction
-            const playOnInteraction = () => {
-              audio.currentTime = 0;
-              audio.play()
-                .then(() => console.log("Audio started after interaction"))
-                .catch(e => console.log("Still blocked:", e));
-              document.removeEventListener('click', playOnInteraction);
-              document.removeEventListener('keydown', playOnInteraction);
-            };
-            document.addEventListener('click', playOnInteraction);
-            document.addEventListener('keydown', playOnInteraction);
-          });
-      }
     }
 
     nextWord(words[0], canvas)

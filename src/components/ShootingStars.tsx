@@ -59,10 +59,10 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   const [stars, setStars] = useState<ShootingStar[]>([]);
   const svgRef = useRef<SVGSVGElement>(null);
 
-  // Generate static background dots
+  // Generate static background dots (reduced by 30%)
   const backgroundDots = useMemo(() => {
     const dots = [];
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 105; i++) { // Reduced from 150 to 105 (30% reduction)
       dots.push({
         id: i,
         x: Math.random() * 100,
@@ -77,8 +77,8 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   useEffect(() => {
     const intervals: ReturnType<typeof setTimeout>[] = [];
     
-    // Create multiple star generators for more frequent stars
-    for (let i = 0; i < 5; i++) {
+    // Create multiple star generators (reduced by 30%)
+    for (let i = 0; i < 3; i++) { // Reduced from 5 to 3 generators
       const createStar = () => {
         const { x, y, angle } = getRandomStartPoint();
         const newStar: ShootingStar = {
@@ -149,6 +149,7 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
     <svg
       ref={svgRef}
       className={cn("w-full h-full absolute inset-0", className)}
+      style={{ willChange: 'auto' }}
     >
       {/* Background dots with teal and pink colors */}
       {backgroundDots.map((dot) => (

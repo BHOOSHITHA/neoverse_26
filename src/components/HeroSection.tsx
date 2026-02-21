@@ -2,6 +2,7 @@ import { Calendar, MapPin } from 'lucide-react';
 import surveySparrowLogo from '../assets/gallery/SurveySparrow_Symbol_1.png';
 import { useEffect } from 'react';
 import { DraggableRope } from './ui/gsap-draggable-rope';
+import SponsorCarousel from './SponsorCarousel';
 
 export default function HeroSection() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center bg-transparent pt-20 relative">
       {/* Spline 3D Background - Right Aligned */}
-      <div className="hidden lg:block absolute -right-[10%] top-0 bottom-0 w-[70%] pointer-events-none z-[1]">
+      <div className="hidden lg:block absolute -right-[10%] top-0 bottom-0 w-[70%] pointer-events-none z-[1]" style={{ willChange: 'transform' }}>
         <spline-viewer url="https://prod.spline.design/847hFSdYZYit59mg/scene.splinecode"></spline-viewer>
       </div>
 
@@ -117,6 +118,9 @@ export default function HeroSection() {
               </button>
             </a>
           </div>
+
+          {/* Moving Sponsor Carousel */}
+          <SponsorCarousel />
         </div>
       </div>
     </section>

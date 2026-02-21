@@ -48,6 +48,7 @@ export default function Navbar() {
     { name: 'About', id: 'about' },
     { name: 'Prizes', id: 'prizes' },
     { name: 'Timeline', id: 'journey' },
+    { name: 'Faculty', id: 'faculty' },
     { name: 'Register', id: 'register' },
     { name: 'Contact', id: 'contact' },
   ];

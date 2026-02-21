@@ -11,12 +11,22 @@ export default function ContactsSection() {
       name: 'Sarvesh PV',
       role: 'Student Organizer',
       phone: '+91 88078 07807'
+    },
+    {name: 'Nikhil S S ',
+      role: 'Student Organizer',
+      phone: '+91 91489 35974'
+    },
+    {
+      name: 'Madhumitha N',
+      role: 'Student Organizer',
+      phone: '+91 77089 50496'
     }
+    
   ];
 
   return (
     <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-transparent">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Contact Us
@@ -27,7 +37,7 @@ export default function ContactsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {contacts.map((contact, index) => (
             <div
               key={index}

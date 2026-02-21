@@ -9,6 +9,7 @@ import TracksSection from '../components/TracksSection';
 import SponsorShowcase from '../components/SponsorShowcase';
 import JourneySection from '../components/JourneySection';
 import RegistrationSection from '../components/RegistrationSection';
+import FacultyCoordinators from '../components/FacultyCoordinators';
 import ContactsSection from '../components/ContactsSection';
 import Footer from '../components/Footer';
 import BackgroundEffect from '../components/BackgroundEffect';
@@ -29,6 +30,7 @@ export default function LandingPage() {
         <SponsorShowcase />
         <JourneySection />
         <RegistrationSection />
+        <FacultyCoordinators />
         <div id="contact">
           <ContactsSection />
         </div>

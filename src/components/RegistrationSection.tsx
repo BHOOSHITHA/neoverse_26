@@ -25,7 +25,7 @@ export default function RegistrationSection() {
     {
       icon: CheckCircle,
       title: 'Selection Process',
-      description: 'Idea Submission Round followed by Final Round with shortlisted teams'
+      description: 'Abstract submissions followed by 24-hour hackathon. All registered students can participate'
     },
     {
       icon: FileText,

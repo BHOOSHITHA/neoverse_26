@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
 @theme {
   --color-primary-50: #E6F5F6;
   --color-primary-100: #F0F9FF;
@@ -120,4 +133,17 @@
   clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
   transform: translate(2px, 2px);
   opacity: 0.8;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
 }

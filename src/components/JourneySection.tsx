@@ -24,7 +24,7 @@ export default function JourneySection() {
     {
       number: 4,
       title: 'Idea Refinement Session',
-      description: 'A company-led interactive session to help teams refine, strengthen, and enhance their project ideas. Participation is optional but highly recommende',
+      description: 'A company-led interactive session to help teams refine, strengthen, and enhance their project ideas. Participation is optional but highly recommended',
       date: 'March 02, 2026',
     },
 
@@ -44,7 +44,7 @@ export default function JourneySection() {
   };
 
   return (
-    <section id="journey" className="hidden md:block py-20 px-4 sm:px-6 bg-transparent overflow-x-hidden">
+    <section id="journey" className="py-20 px-4 sm:px-6 bg-transparent overflow-x-hidden">
       <div className="max-w-6xl mx-auto overflow-x-hidden">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
