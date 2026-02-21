@@ -12,7 +12,7 @@ export default function AboutSection() {
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
             <p className="text-primary-100">
-              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a national-level AI hackathon conducted by the <span className="font-bold text-primary-300">Department of Artificial Intelligence and Machine Learning Association</span> and the <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
+              <span className="font-bold text-white text-xl">NeoVerse 26</span> is a national-level AI hackathon conducted by the <span className="font-bold text-primary-300">Department of Computing - Artificial Intelligence and Machine Learning Association</span> and the <span className="font-bold text-blue-300">Student Developers Cell (SDC)</span> at Coimbatore Institute of Technology.
             </p>
 
             <p className="text-primary-100">
@@ -20,7 +20,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-primary-100">
-              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who aspire to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems — this is your platform.
+              This is where <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-blue-400">innovation meets execution</span>. NeoVerse 26 is designed for builders, problem solvers, and innovators who aspire to create real-world impact through technology. Whether you're coding a breakthrough solution, designing an intuitive interface, or architecting scalable systems, this is your platform.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function AboutSection() {
                 <h3 className="text-xl font-bold text-white">Internship Opportunities</h3>
               </div>
               <p className="text-primary-100 leading-relaxed">
-                Top performers will get exclusive interview opportunities from our partners. Turn your hackathon success into career advancement! <span className="font-bold">*Opportunities will be based on performance and company decisions.</span>
+                Top performers will get exclusive direct interview opportunities from our partners. Turn your hackathon success into career advancement! <span className="font-bold">*Opportunities will be based on performance and company decisions.</span>
               </p>
             </div>
 

@@ -14,7 +14,7 @@ export default function DeptComputingSection() {
 
         <div className="max-w-5xl mx-auto space-y-6 text-lg leading-relaxed text-justify">
           <p className="text-primary-100">
-            The <span className="font-bold text-white">Department of M.Sc. Artificial Intelligence and Machine Learning</span> is dedicated to advancing knowledge and innovation in intelligent systems that learn, adapt, and make autonomous decisions. It delivers a rigorous, interdisciplinary curriculum integrating artificial intelligence, data science, and advanced computing principles.
+            <span className="font-bold text-white">M.Sc. Artificial Intelligence and Machine Learning</span> is dedicated to advancing knowledge and innovation in intelligent systems that learn, adapt, and make autonomous decisions. It delivers a rigorous, interdisciplinary curriculum integrating artificial intelligence, data science, and advanced computing principles.
           </p>
 
           <p className="text-primary-100">
