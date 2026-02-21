@@ -6,26 +6,28 @@ export default function JourneySection() {
       number: 1,
       title: 'Registration Begins',
       description: 'Let\'s get innovating for a change',
-      date: 'February 18, 2026',
+      date: 'February 21, 2026',
     },
     {
       number: 2,
-      title: 'Registration Ends',
-      description: 'Final chance to register for the hackathon. Don\'t miss out!',
-      date: 'February 24, 2026',
+      title: 'Abstract Submission',
+      description: 'Submit your project abstract outlining your idea, objectives, and implementation approach. This is a mandatory step for shortlisting into the hackathon',
+      date: 'February 21 - March 02, 2026',
     },
+    
     {
       number: 3,
-      title: 'Team Shortlisting Results',
-      description: 'Selected teams will be notified via email. Check your inbox!',
-      date: 'February 27, 2026',
+      title: 'Registration Ends',
+      description: 'Final chance to register for the hackathon. Don\'t miss out!',
+      date: 'March 2, 2026',
     },
     {
       number: 4,
-      title: 'Confirmation from Teams',
-      description: 'Selected teams must submit the provided signed consent forms along with permission from their respective colleges to confirm participation',
-      date: 'March 2, 2026',
+      title: 'Idea Refinement Session',
+      description: 'A company-led interactive session to help teams refine, strengthen, and enhance their project ideas. Participation is optional but highly recommende',
+      date: 'March 02, 2026',
     },
+
     {
       number: 5,
       title: 'Hackathon Day',
