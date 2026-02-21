@@ -48,7 +48,7 @@ export default function AboutSection() {
                 <h3 className="text-xl font-bold text-white">Additional Perks</h3>
               </div>
               <p className="text-primary-100 leading-relaxed">
-                Earn certificates of participation, connect with industry professionals, and expand your network with fellow innovators and mentors throughout the event.
+                Earn Certificates of Participation, Connect with Industry Professionals, and Expand your Network with fellow Innovators and Mentors throughout the event.
               </p>
             </div>
           </div>
