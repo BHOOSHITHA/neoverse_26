@@ -24,12 +24,12 @@ export default function FacultyCoordinators() {
     },
     {
       name: 'Dr. P. Aruna',
-      designation: 'Assistant Professor (Sl.Gr.), Dept. Of Computing (AI&ML)',
+      designation: 'Assistant Professor (Sr.Gr.), Dept. Of Computing (AI&ML)',
       image: arunaImg
     },
     {
       name: 'Dr. V. Sridevi',
-      designation: 'Assistant Professor (Sl.Gr.), Dept. Of Computing (AI&ML)',
+      designation: 'Assistant Professor (Sr.Gr.), Dept. Of Computing (AI&ML)',
       image: srideviImg
     },
     {
