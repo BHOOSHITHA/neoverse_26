@@ -30,7 +30,7 @@ export default function RegistrationSection() {
     {
       icon: FileText,
       title: 'What You Get',
-      description: '₹30K Prize Pool, Certificates, Internship Opportunities & Networking'
+      description: '₹50K Prize Pool, Certificates, Internship Opportunities & Networking'
     }
   ];
 

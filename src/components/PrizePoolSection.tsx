@@ -15,7 +15,7 @@ export default function PrizePoolSection() {
           </h2>
           <p className="text-2xl md:text-3xl font-bold tracking-wide"
             style={{ color: '#22d3ee', textShadow: '0 0 16px rgba(34,211,238,0.5)' }}>
-            Total Prize Pool Worth ₹30,000
+            Total Prize Pool Worth ₹50,000
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function PrizePoolSection() {
                 />
               </div>
               <h3 className="text-white text-xl font-bold mb-2">2nd Prize</h3>
-              <p className="text-3xl font-extrabold text-white mb-4">₹10,000</p>
+              <p className="text-3xl font-extrabold text-white mb-4">₹15,000</p>
               {/* Badge */}
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold text-white"
@@ -74,7 +74,7 @@ export default function PrizePoolSection() {
                 />
               </div>
               <h3 className="text-white text-2xl font-bold mb-2">1st Prize</h3>
-              <p className="text-4xl font-extrabold text-white mb-4">₹15,000</p>
+              <p className="text-4xl font-extrabold text-white mb-4">₹25,000</p>
               {/* Badge */}
               <span
                 className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full text-sm font-bold text-black"
@@ -107,7 +107,7 @@ export default function PrizePoolSection() {
                 />
               </div>
               <h3 className="text-white text-xl font-bold mb-2">3rd Prize</h3>
-              <p className="text-3xl font-extrabold text-white mb-4">₹5,000</p>
+              <p className="text-3xl font-extrabold text-white mb-4">₹10,000</p>
               {/* Badge */}
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold text-white"
