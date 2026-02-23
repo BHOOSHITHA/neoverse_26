@@ -11,17 +11,7 @@ export default function ContactsSection() {
       name: 'Sarvesh PV',
       role: 'Student Organizer',
       phone: '+91 88078 07807'
-    },
-    {name: 'Nikhil S S ',
-      role: 'Student Organizer',
-      phone: '+91 91489 35974'
-    },
-    {
-      name: 'Madhumitha N',
-      role: 'Student Organizer',
-      phone: '+91 77089 50496'
     }
-    
   ];
 
   return (
@@ -37,7 +27,7 @@ export default function ContactsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {contacts.map((contact, index) => (
             <div
               key={index}
