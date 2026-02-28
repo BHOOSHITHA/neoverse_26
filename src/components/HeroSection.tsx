@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       {/* Draggable Rope with Internship Text - Top Right */}
       <div className="hidden lg:flex absolute top-0 right-[512px] items-start gap-6 z-[2]">
-        <DraggableRope 
+        <DraggableRope
           ropeHeight={200}
           iconSize={100}
           minAngle={5}
@@ -64,10 +64,10 @@ export default function HeroSection() {
           {/* Main Title */}
           <div>
             <div className="flex items-center gap-3 mb-6 relative">
-              <h1 
+              <h1
                 className="text-5xl md:text-7xl font-extrabold tracking-tight relative"
               >
-                <span 
+                <span
                   className="relative inline-block animate-glitch text-white"
                   data-text="NeoVerse"
                 >
@@ -106,17 +106,12 @@ export default function HeroSection() {
 
           {/* CTA Button */}
           <div>
-            <a
-              href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => alert('Registrations are closed!')}
+              className="bg-gradient-to-r from-gray-600 to-gray-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg transition-all border border-gray-400/30 cursor-not-allowed opacity-80"
             >
-              <button
-                className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-500 hover:to-blue-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-teal-400/30 cursor-pointer"
-              >
-                Register Now
-              </button>
-            </a>
+              Registrations Closed
+            </button>
           </div>
 
           {/* Moving Sponsor Carousel */}
