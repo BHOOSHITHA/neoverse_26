@@ -16,22 +16,15 @@ interface Faculty {
 }
 
 export default function FacultyCoordinators() {
-  const facultyMembers: Faculty[] = [
+  const eventConvener: Faculty[] = [
     {
       name: 'Dr. M. Sujithra',
       designation: 'Associate Professor & HOD (I/C), Dept. Of Computing (AI&ML)',
       image: sujithraImg
-    },
-    {
-      name: 'Dr. P. Aruna',
-      designation: 'Assistant Professor (Sr.Gr.), Dept. Of Computing (AI&ML)',
-      image: arunaImg
-    },
-    {
-      name: 'Dr. V. Sridevi',
-      designation: 'Assistant Professor (Sr.Gr.), Dept. Of Computing (AI&ML)',
-      image: srideviImg
-    },
+    }
+  ];
+
+  const facultyCoordinators: Faculty[] = [
     {
       name: 'Dr. N. Karthick',
       designation: 'Assistant Professor (Sr.Gr.), Dept. Of Computing (AI&ML)',
@@ -41,10 +34,23 @@ export default function FacultyCoordinators() {
       name: 'Mrs. P. Hemashree',
       designation: 'Assistant Professor, Dept. Of Computing (AI&ML)',
       image: hemashreeImg
+    }
+  ];
+
+  const organisingCommittee: Faculty[] = [
+    {
+      name: 'Dr. P. Aruna',
+      designation: 'Assistant Professor (Sl.Gr.), Dept. Of Computing (AI&ML)',
+      image: arunaImg
+    },
+    {
+      name: 'Dr. V. Sridevi',
+      designation: 'Assistant Professor (Sl.Gr.), Dept. Of Computing (AI&ML)',
+      image: srideviImg
     },
     {
       name: 'Dr. D. Kavitha',
-      designation: 'Assistant Professor, Dept. Of Computing (AI&ML)',
+      designation: 'Assistant Professor (Sl.Gr.), Dept. Of Computing (AI&ML)',
       image: kavithaImg
     },
     {
@@ -69,6 +75,34 @@ export default function FacultyCoordinators() {
     }
   ];
 
+  const renderFacultyGroup = (facultyList: Faculty[]) => (
+    <div className="flex flex-wrap justify-center gap-8">
+      {facultyList.map((faculty, index) => (
+        <div
+          key={index}
+          className="group relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/20 hover:border-pink-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/20 w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] max-w-sm"
+        >
+          <div className="flex flex-col items-center text-center">
+            <div className="w-24 h-24 mb-4 rounded-2xl overflow-hidden border-2 border-teal-400/30 group-hover:border-pink-400/50 transition-all">
+              <img
+                src={faculty.image}
+                alt={faculty.name}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <h3 className="text-lg font-bold text-white mb-2">
+              {faculty.name}
+            </h3>
+            <p className="text-xs text-teal-200/80 leading-relaxed">
+              {faculty.designation}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <section id="faculty" className="py-20 px-6 bg-transparent">
       <div className="max-w-7xl mx-auto">
@@ -79,30 +113,31 @@ export default function FacultyCoordinators() {
           <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-pink-500 mx-auto mb-6"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {facultyMembers.map((faculty, index) => (
-            <div
-              key={index}
-              className="group relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/20 hover:border-pink-500/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/20"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 mb-4 rounded-2xl overflow-hidden border-2 border-teal-400/30 group-hover:border-pink-400/50 transition-all">
-                  <img
-                    src={faculty.image}
-                    alt={faculty.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">
-                  {faculty.name}
-                </h3>
-                <p className="text-xs text-teal-200/80 leading-relaxed">
-                  {faculty.designation}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8 text-center flex items-center justify-center gap-4">
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+            Event Convener
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+          </h3>
+          {renderFacultyGroup(eventConvener)}
+        </div>
+
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8 text-center flex items-center justify-center gap-4">
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+            Faculty Coordinators
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+          </h3>
+          {renderFacultyGroup(facultyCoordinators)}
+        </div>
+
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8 text-center flex items-center justify-center gap-4">
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+            Faculty Organisers
+            <span className="h-px w-12 bg-pink-500/50 hidden sm:block"></span>
+          </h3>
+          {renderFacultyGroup(organisingCommittee)}
         </div>
       </div>
     </section>
