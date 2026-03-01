@@ -14,12 +14,12 @@ export default function JourneySection() {
       description: 'Submit your project abstract outlining your idea, objectives, and implementation approach. This is a mandatory step for shortlisting into the hackathon',
       date: 'February 21 - March 02, 2026',
     },
-    
+
     {
       number: 3,
       title: 'Registration Ends',
       description: 'Final chance to register for the hackathon. Don\'t miss out!',
-      date: 'February 28, 2026',
+      date: 'March 1, 2026',
     },
     {
       number: 4,

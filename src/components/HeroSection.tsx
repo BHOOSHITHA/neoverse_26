@@ -107,10 +107,10 @@ export default function HeroSection() {
           {/* CTA Button */}
           <div>
             <button
-              onClick={() => alert('Registrations are closed!')}
-              className="bg-gradient-to-r from-gray-600 to-gray-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg transition-all border border-gray-400/30 cursor-not-allowed opacity-80"
+              onClick={() => window.open('https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646', '_blank')}
+              className="bg-gradient-to-r from-teal-400 to-emerald-400 text-gray-900 font-bold px-10 py-4 text-lg rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(45,212,191,0.3)] hover:shadow-[0_0_30px_rgba(45,212,191,0.5)] border border-teal-300/50"
             >
-              Registrations Closed
+              Register Now
             </button>
           </div>
 

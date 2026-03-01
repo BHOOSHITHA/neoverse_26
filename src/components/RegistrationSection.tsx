@@ -71,12 +71,13 @@ export default function RegistrationSection() {
         </div>
 
         <div className="text-center mb-8">
-          <button
-            onClick={() => alert('Registrations are closed!')}
-            className="bg-gradient-to-r from-gray-600 to-gray-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg transition-all border border-gray-400/30 cursor-not-allowed opacity-80"
-          >
-            Registrations Closed
-          </button>
+          <a href="https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646" target="_blank" rel="noreferrer">
+            <button
+              className="bg-gradient-to-r from-primary-600 to-blue-600 hover:from-primary-500 hover:to-blue-500 text-white font-bold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-primary-500/25 transition-all hover:-translate-y-1 cursor-pointer"
+            >
+              Register Now
+            </button>
+          </a>
         </div>
 
 
