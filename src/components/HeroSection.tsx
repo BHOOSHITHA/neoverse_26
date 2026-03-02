@@ -104,14 +104,44 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div>
-            <button
-              onClick={() => window.open('https://unstop.com/p/neoverse-26-coimbatore-institute-of-technology-cit-coimbatore-1643646', '_blank')}
-              className="bg-gradient-to-r from-teal-400 to-emerald-400 text-gray-900 font-bold px-10 py-4 text-lg rounded-full hover:scale-105 transition-all shadow-[0_0_20px_rgba(45,212,191,0.3)] hover:shadow-[0_0_30px_rgba(45,212,191,0.5)] border border-teal-300/50"
-            >
-              Register Now
-            </button>
+          {/* Registration Closed Message */}
+          <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/30 hover:border-pink-500/40 transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text mb-4">
+              Thanks for the Overwhelming Response!
+            </h3>
+            <p className="text-lg text-white/90 mb-6">
+              See you at the event 🎉
+            </p>
+            
+            {/* Statistics */}
+            <div className="grid grid-cols-3 gap-4">
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-teal-400/20">
+                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-teal-300 bg-clip-text">
+                  70+
+                </div>
+                <div className="text-sm text-teal-200/70 mt-1 text-center">
+                  Teams Registered
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-pink-400/20">
+                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-pink-400 to-pink-300 bg-clip-text">
+                  20+
+                </div>
+                <div className="text-sm text-pink-200/70 mt-1 text-center">
+                  Colleges
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-teal-400/20">
+                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text">
+                  250+
+                </div>
+                <div className="text-sm text-teal-200/70 mt-1 text-center">
+                  Participants
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Moving Sponsor Carousel */}
