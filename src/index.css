@@ -147,3 +147,21 @@ body {
 .animate-scroll-left {
   animation: scroll-left 30s linear infinite;
 }
+
+@keyframes scroll-up {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 60s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}

@@ -51,6 +51,7 @@ export default function Navbar() {
     { name: 'Faculty', id: 'faculty' },
     { name: 'Register', id: 'register' },
     { name: 'Contact', id: 'contact' },
+    { name: 'Organizers', id: 'organizers' },
   ];
 
   return (

@@ -6,6 +6,8 @@ import wellWisher2Img from '../assets/sponsors/wellwisher-2.png';
 import joslinImg from '../assets/Joslin.png';
 import ixesImg from '../assets/IXES.png';
 import vispraImg from '../assets/sponsors/vispra.png';
+import xeltrixImg from '../assets/sponsors/Xeltrix Log from WhatsApp.png';
+import sarveshImg from '../assets/sponsors/sarvesh.jpeg';
 
 
 interface Sponsor {
@@ -25,6 +27,8 @@ export default function SponsorShowcase() {
     { id: '6', name: 'Joslin', logo: joslinImg },
     { id: '7', name: 'IXES', logo: ixesImg, link: 'https://ixes.ai/' },
     { id: '8', name: 'Vispra', logo: vispraImg, link: 'https://vispra.com/' },
+    { id: '9', name: 'Xeltrix', logo: xeltrixImg },
+    { id: '10', name: 'Sarvesh', logo: sarveshImg },
   ];
 
   return (

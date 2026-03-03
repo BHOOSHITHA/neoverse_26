@@ -11,6 +11,7 @@ import JourneySection from '../components/JourneySection';
 import RegistrationSection from '../components/RegistrationSection';
 import FacultyCoordinators from '../components/FacultyCoordinators';
 import ContactsSection from '../components/ContactsSection';
+import EventOrganizers from '../components/EventOrganizers';
 import Footer from '../components/Footer';
 import BackgroundEffect from '../components/BackgroundEffect';
 
@@ -31,6 +32,7 @@ export default function LandingPage() {
         <JourneySection />
         <RegistrationSection />
         <FacultyCoordinators />
+        <EventOrganizers />
         <div id="contact">
           <ContactsSection />
         </div>

@@ -1,5 +1,6 @@
 import { Calendar, MapPin } from 'lucide-react';
 import surveySparrowLogo from '../assets/gallery/SurveySparrow_Symbol_1.png';
+import oneDLogo from '../assets/sponsors/one_d_logo.png';
 import { useEffect } from 'react';
 import { DraggableRope } from './ui/gsap-draggable-rope';
 import SponsorCarousel from './SponsorCarousel';
@@ -45,7 +46,7 @@ export default function HeroSection() {
 
       {/* Text Content - Left Aligned */}
       <div className="max-w-7xl mx-auto px-6 py-20 w-full relative z-20">
-        <div className="max-w-2xl text-left space-y-8">
+        <div className="max-w-2xl text-left space-y-6">
           {/* SurveySparrow Presents */}
           <div className="flex items-center gap-3">
             <img
@@ -63,7 +64,7 @@ export default function HeroSection() {
 
           {/* Main Title */}
           <div>
-            <div className="flex items-center gap-3 mb-6 relative">
+            <div className="flex items-center gap-3 mb-4 relative">
               <h1
                 className="text-5xl md:text-7xl font-extrabold tracking-tight relative"
               >
@@ -79,8 +80,19 @@ export default function HeroSection() {
               </span>
             </div>
 
+            {/* Co-Sponsor - One D */}
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-sm md:text-base text-teal-200/70 font-medium">Co-Sponsored by</span>
+              <img
+                src={oneDLogo}
+                alt="One D Logo"
+                className="h-6 md:h-7 w-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+
             {/* Tagline */}
-            <h2 className="text-xl md:text-2xl font-bold text-white/90 mb-3 tracking-wide uppercase">
+            <h2 className="text-xl md:text-2xl font-bold text-white/90 mb-3 tracking-wide uppercase mt-4">
               Where Innovation Meets Execution
             </h2>
             <div className="flex flex-col gap-1 text-base md:text-lg text-teal-200/80 font-medium tracking-wide mt-4">
