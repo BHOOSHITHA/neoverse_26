@@ -8,6 +8,8 @@ import ixesImg from '../assets/IXES.png';
 import vispraImg from '../assets/sponsors/vispra.png';
 import xeltrixImg from '../assets/sponsors/Xeltrix Log from WhatsApp.png';
 import sarveshImg from '../assets/sponsors/sarvesh.jpeg';
+import excelImg from '../assets/sponsors/excel.jpeg';
+import associatesImg from '../assets/sponsors/assosiates.png';
 
 
 interface Sponsor {
@@ -29,6 +31,8 @@ export default function SponsorShowcase() {
     { id: '8', name: 'Vispra', logo: vispraImg, link: 'https://vispra.com/' },
     { id: '9', name: 'Xeltrix', logo: xeltrixImg },
     { id: '10', name: 'Sarvesh', logo: sarveshImg },
+    { id: '11', name: 'Excel', logo: excelImg },
+    { id: '12', name: 'Associates', logo: associatesImg },
   ];
 
   return (

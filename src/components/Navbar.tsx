@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import favicon from '../assets/favicon.png';
 import citLogo from '../assets/images.jpeg';
+import iicLogo from '../assets/iiclogo.png';
+import sdcLogo from '../assets/sdc.png';
 
 export default function Navbar() {
   const location = useLocation();
@@ -60,13 +62,24 @@ export default function Navbar() {
       : 'bg-black/50 backdrop-blur-md border-b border-teal-500/40'
       }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group z-50">
+        <div className="flex items-center gap-3 z-50">
+          {/* NeoVerse Favicon - Left End */}
+          <Link to="/" className="flex items-center">
+            <img
+              src={favicon}
+              alt="NeoVerse"
+              className="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-[0_0_10px_rgba(20,184,166,0.5)]"
+            />
+          </Link>
 
-          {/* Favicon */}
+          {/* Vertical Separator */}
+          <div className="w-px h-8 bg-white/30 hidden md:block"></div>
+
+          {/* SDC Logo */}
           <img
-            src={favicon}
-            alt="NeoVerse"
-            className="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-[0_0_10px_rgba(20,184,166,0.5)]"
+            src={sdcLogo}
+            alt="SDC"
+            className="w-8 h-8 md:w-10 md:h-10 object-contain hidden md:block"
           />
 
           {/* Vertical Separator */}
@@ -83,7 +96,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-xs md:text-sm leading-tight text-left">Coimbatore Institute of Technology</span>
             </div>
           </div>
-        </Link>
+        </div>
 
         {isHomePage && (
           <>
@@ -99,10 +112,23 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              
+              {/* IIC Logo - Desktop */}
+              <img
+                src={iicLogo}
+                alt="IIC Logo"
+                className="h-10 w-auto object-contain ml-4"
+              />
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden z-50">
+            {/* Mobile Menu Button and IIC Logo */}
+            <div className="md:hidden flex items-center gap-3 z-50">
+              {/* IIC Logo - Mobile */}
+              <img
+                src={iicLogo}
+                alt="IIC Logo"
+                className="h-8 w-auto object-contain"
+              />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-white hover:text-teal-300 transition-colors"

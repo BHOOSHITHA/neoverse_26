@@ -45,8 +45,8 @@ export default function HeroSection() {
       </div>
 
       {/* Text Content - Left Aligned */}
-      <div className="max-w-7xl mx-auto px-6 py-20 w-full relative z-20">
-        <div className="max-w-2xl text-left space-y-6">
+      <div className="max-w-7xl mx-auto px-6 py-12 w-full relative z-20">
+        <div className="max-w-2xl text-left space-y-4">
           {/* SurveySparrow Presents */}
           <div className="flex items-center gap-3">
             <img
@@ -117,39 +117,36 @@ export default function HeroSection() {
           </div>
 
           {/* Registration Closed Message */}
-          <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-teal-500/30 hover:border-pink-500/40 transition-all duration-300">
-            <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text mb-4">
+          <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-4 border border-teal-500/30 hover:border-pink-500/40 transition-all duration-300">
+            <h3 className="text-xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text mb-4">
               Thanks for the Overwhelming Response!
             </h3>
-            <p className="text-lg text-white/90 mb-6">
-              See you at the event 🎉
-            </p>
             
             {/* Statistics */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-teal-400/20">
-                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-teal-300 bg-clip-text">
+            <div className="grid grid-cols-3 gap-3">
+              <div className="flex flex-col items-center p-2 bg-white/5 rounded-xl border border-teal-400/20">
+                <div className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-teal-300 bg-clip-text">
                   70+
                 </div>
-                <div className="text-sm text-teal-200/70 mt-1 text-center">
+                <div className="text-xs md:text-sm text-teal-200/70 mt-1 text-center">
                   Teams Registered
                 </div>
               </div>
               
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-pink-400/20">
-                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-pink-400 to-pink-300 bg-clip-text">
+              <div className="flex flex-col items-center p-2 bg-white/5 rounded-xl border border-pink-400/20">
+                <div className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-pink-400 to-pink-300 bg-clip-text">
                   20+
                 </div>
-                <div className="text-sm text-pink-200/70 mt-1 text-center">
+                <div className="text-xs md:text-sm text-pink-200/70 mt-1 text-center">
                   Colleges
                 </div>
               </div>
               
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl border border-teal-400/20">
-                <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text">
+              <div className="flex flex-col items-center p-2 bg-white/5 rounded-xl border border-teal-400/20">
+                <div className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-teal-400 to-pink-400 bg-clip-text">
                   250+
                 </div>
-                <div className="text-sm text-teal-200/70 mt-1 text-center">
+                <div className="text-xs md:text-sm text-teal-200/70 mt-1 text-center">
                   Participants
                 </div>
               </div>
